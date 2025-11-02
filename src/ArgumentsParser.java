@@ -167,7 +167,7 @@ public class ArgumentsParser {
     try {
       String hostname = java.net.InetAddress.getLocalHost().getHostName();
 
-      if(!hostname.equals("arch")) {
+      if(!hostname.equals("arch") && false) {
         System.out.println("[Creative] Creative Mode blocked on your computer. This mode is only for debugging - do NOT use it!");
         System.exit(2);
       }

@@ -1,13 +1,15 @@
 # Game of Life
-A Game of Life I wrote for University.
+A Game of Life I wrote for the University.
 
-**Note:** Creative Mode has a hardcoded system hostname to prevent the professor from crashing my code (lol). It's in ArgumentsParser.java if you want to remove it, go ahead!
+**Note:** Creative Mode has a hardcoded system hostname to prevent the professor from crashing my code. It's in ArgumentsParser.java if you want to remove it, go ahead!
 
 There were several restrictions, hence why the code looks weird:
 - No more than one return per function
 - Parameters have weird restrictions (for example, width can only be 10/20/40/80 by default)
 - No OOP (somehow using a **record** didn't apply)
 - Had to use meaningful names everywhere (I guess this is justified)
+
+![](./docs/assets/game.png)
 
 ### Features implemented
 - The basic rules
@@ -32,7 +34,7 @@ There were several restrictions, hence why the code looks weird:
 | Short key |      Long key     | Description                                                                                   |        Non-creative restrictions       |          Creative restrictions         | Is it required in non-creative mode? |
 |:---------:|:-----------------:|-----------------------------------------------------------------------------------------------|:--------------------------------------:|:--------------------------------------:|:------------------------------------:|
 |   w=, -w  |      --width      | Sets the grid width                                                                           |       Can only be 10, 20, 40, 80       |                  >= 1                  |                  Yes                 |
-|   h=, -h  |      --height     | Sets the grid height                                                                          |         Can only be 10, 20, 40         |                  >= 1                  |                  Yes                 |
+|   h=, -h  |     --height      | Sets the grid height                                                                          |         Can only be 10, 20, 40         |                  >= 1                  |                  Yes                 |
 |   g=, -g  |   --generations   | Sets how many generations to calculate (0 = unlimited)                                        |                  >= 0                  |                  >= 0                  |                  Yes                 |
 |   s=, -s  |      --speed      | Sets how many milliseconds to sleep between generations                                       |    Between 250 and 1000 (inclusive)    |                  >= 0                  |                  Yes                 |
 |   n=, -n  |   --neighborhood  | Sets the neighborhood checking type (see above)                                               |             Between 1 and 5            |             Between 1 and 5            |          No (defaults to 3)          |
